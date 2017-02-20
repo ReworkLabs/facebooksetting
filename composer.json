@@ -1,0 +1,25 @@
+{
+    "name": "reworklabs/facebooksetting",
+    "description": "Extend Botman for Facebook Messegenger Platform",
+    "license": "MIT",
+    "keywords": [
+        "botman",
+        "Facebook Messenger"
+    ],
+    "homepage": "http://github.com/reworklabs/facebooksetting",
+    "authors": [
+        {
+            "name": "Knight Tan",
+            "email": "knight@reworklabs.com"
+        }
+    ],
+    "require": {
+        "mpociot/botman": "master"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Reworklabs\\FacebookSetting\\": "src/"
+        }
+    }
+}
