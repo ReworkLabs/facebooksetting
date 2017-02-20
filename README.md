@@ -5,24 +5,25 @@ In Progress
 
 ## Sample code
 
+```php
 use Reworklabs\FacebookSetting\SettingFactory;
 use Reworklabs\FacebookSetting\Lib\ThreadSetting;
 use Reworklabs\FacebookSetting\Lib\MenuItem;
 
-
 $setting = SettingFactory::create($config);
+```
 
-//greeting text
+Greeting text
 ```php
 $setting->addSetting(ThreadSetting::create()->setting_type('greeting')->state('Hi Dude'));
 ```
 
-//get started button button
+Get started button button
 ```php
 $setting->addSetting(ThreadSetting::create()->state('new_thread')->addPayload('USER_DEFINED_PAYLOAD'));
 ```
 
-//presistent menu
+Presistent menu
 ```php
 $setting->addSetting(ThreadSetting::create()
  		->addItem(MenuItem::create('Tell me more')->type('postback')->payload('tellmemore'))
